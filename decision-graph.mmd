@@ -1,0 +1,39 @@
+```mermaid
+flowchart TD
+    n0["PROBLEM"]
+    n1["CURRENT SYSTEM"]
+    n2["CONSTRAINTS"]
+    n3["ROOT CAUSE"]
+    n4["OPTIONS"]
+    n5["TRADEOFFS"]
+    n6["ARCHITECTURE DECISION"]
+    n7["IMPLEMENTATION"]
+    n8["VERIFICATION"]
+    n9["DEPLOYMENT"]
+    n10["OBSERVATION"]
+    n11["TECHNICAL LEARNING"]
+    n0 --> n1
+    n1 --> n2
+    n2 --> n3
+    n3 --> n4
+    n4 --> n5
+    n5 --> n6
+    n6 --> n7
+    n7 --> n8
+    n8 --> n9
+    n9 --> n10
+    n10 --> n11
+    n0 -->|learning| n0
+
+stateDiagram-v2
+    [*] --> REPORTED
+    REPORTED --> TRIAGED
+    TRIAGED --> ROOT-CAUSED
+    ROOT-CAUSED --> DESIGNED
+    DESIGNED --> IMPLEMENTING
+    IMPLEMENTING --> VERIFYING
+    VERIFYING --> DEPLOYED
+    DEPLOYED --> OBSERVING
+    OBSERVING --> CLOSED
+    CLOSED --> [*]
+```

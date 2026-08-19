@@ -1,0 +1,46 @@
+{
+  "decision_object": {
+    "decision_id": "ENG-2026-119",
+    "decision_name": "Ingest p99 latency fix",
+    "owning_function": "Engineering / Technology",
+    "decision_owner_role": "Staff Engineer",
+    "trigger_condition": "p99 4s, target 800ms; pool saturating at peak",
+    "current_state": "Latency breach; DB pool exhausted",
+    "required_inputs": [
+      "latency telemetry",
+      "pool utilization",
+      "load profile"
+    ],
+    "evidence_threshold": "p99 < 800ms at 2x peak sustained",
+    "available_options": [
+      "Fix leak + resize pool",
+      "Add read replicas",
+      "Queue + batch",
+      "Defer"
+    ],
+    "decision_criteria": "Resolve SLO without re-architect",
+    "constraints": "No new major service",
+    "risk_level": "high",
+    "delegation_level": "Own",
+    "escalation_conditions": "Leak not in worker code",
+    "expected_outcome": "p99 < 800ms at 2x peak",
+    "verification_method": "Load test at 2x peak",
+    "actual_outcome": "p99 620ms at 2.3x peak",
+    "learning_extracted": "Connection-pool metrics must be first-class alerts",
+    "rule_version": "ENG-RULE-009",
+    "last_reviewed": "2026-08-18"
+  },
+  "learning_ledger": {
+    "case": "p99 latency spike on ingest path",
+    "decision": "Fix connection leak + resize pool",
+    "assumption": "Leak in ingest worker",
+    "action": "Patch worker; load-test 2x peak",
+    "expected_result": "p99 < 800ms at 2x peak",
+    "actual_result": "620ms at 2.3x peak",
+    "variance": "Confirmed leak hypothesis",
+    "cause": "Unreturned connections in worker",
+    "learning": "Pool metrics + leak regression test mandatory",
+    "rule_update": "Add pool-utilization alert + connection-leak regression test"
+  },
+  "orientation_required": true
+}
