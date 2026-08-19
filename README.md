@@ -29,17 +29,17 @@ Architecture patterns; failure modes; reliability signals; technical debt; estim
 ## Operating tree
 ```text
 PROBLEM →
-    CURRENT SYSTEM →
-    CONSTRAINTS →
-    ROOT CAUSE →
-    OPTIONS →
-    TRADEOFFS →
-    ARCHITECTURE DECISION →
-    IMPLEMENTATION →
-    VERIFICATION →
-    DEPLOYMENT →
-    OBSERVATION →
-    TECHNICAL LEARNING
+ CURRENT SYSTEM →
+ CONSTRAINTS →
+ ROOT CAUSE →
+ OPTIONS →
+ TRADEOFFS →
+ ARCHITECTURE DECISION →
+ IMPLEMENTATION →
+ VERIFICATION →
+ DEPLOYMENT →
+ OBSERVATION →
+ TECHNICAL LEARNING
 ```
 
 ## Decision states
@@ -69,10 +69,10 @@ REPORTED → TRIAGED → ROOT-CAUSED → DESIGNED → IMPLEMENTING → VERIFYING
 > What should be automated?
 > What should the next engineer or agent know?
 
-## Canonical record schema (docx Learning Ledger + Decision Object Fields)
+## Canonical record schema (Learning Ledger + Decision Object Fields)
 Every decision in this line is recorded as:
-- a **Decision Object** (docx S9) — see `schema/decision-object.json`
-- a **Learning Ledger** entry (docx S7) — see `schema/learning-ledger.json`
+- a **Decision Object** — see `schema/decision-object.json`
+- a **Learning Ledger** entry — see `schema/learning-ledger.json`
 
 and the agent must run the **Orientation Protocol** first (see `AGENT.md`).
 
@@ -83,11 +83,11 @@ chain ([`00-kojiki-ontology/synapsis`](https://github.com/robfuj/kojiki-ontology
 SOURCE → RECORD → EVIDENCE → INTERPRETATION → STRATEGY → INTERACTION → OUTPUT → OUTCOME → LEARNING
 ```
 - **Three steps are dedicated niche bots**: `bots/evidence/` (this line's extraction
-  specialist); the shared `synapsis/audit-bot/` (independent audit, org-wide) and
-  `synapsis/learning-bot/` (cross-line memory). See `AGENT.md` for the full contract.
+ specialist); the shared `synapsis/audit-bot/` (independent audit, org-wide) and
+ `synapsis/learning-bot/` (cross-line memory). See `AGENT.md` for the full contract.
 - The rest run inline inside this line's agent, each bounded to one authority.
 - Meta-rule: *evidence ≠ interpretation ≠ belief ≠ doctrine.* Validate with
-  `python3 synapsis/validate.py <record.json>` (in the ontology repo).
+ `python3 synapsis/validate.py <record.json>` (in the ontology repo).
 
 ## How to use
 1. Read `AGENT.md` — the first-run Orientation Protocol.
