@@ -1,0 +1,152 @@
+{
+  "department": "08-engineering",
+  "orientation_required": true,
+  "research_then_install": true,
+  "sub_function_count": 9,
+  "bots": [
+    {
+      "slug": "software-engineering",
+      "sub_function": "Software Engineering",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "architecture",
+      "sub_function": "Architecture",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "platform",
+      "sub_function": "Platform",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "infrastructure",
+      "sub_function": "Infrastructure",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "devops",
+      "sub_function": "DevOps",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "sre",
+      "sub_function": "SRE",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "qa",
+      "sub_function": "QA",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "technical-program-management",
+      "sub_function": "Technical Program Management",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    },
+    {
+      "slug": "developer-experience",
+      "sub_function": "Developer Experience",
+      "titles": [
+        "CTO",
+        "VP Engineering",
+        "Head of Engineering",
+        "Engineering Director",
+        "Engineering Manager",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Software Engineer",
+        "Architect",
+        "SRE"
+      ]
+    }
+  ]
+}
