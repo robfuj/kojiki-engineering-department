@@ -28,7 +28,7 @@
     "actual_outcome": "p99 620ms at 2.3x peak",
     "learning_extracted": "Connection-pool metrics must be first-class alerts",
     "rule_version": "ENG-RULE-009",
-    "last_reviewed": "2026-08-18"
+    "last_reviewed": "2026-08-19"
   },
   "learning_ledger": {
     "case": "p99 latency spike on ingest path",
